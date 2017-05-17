@@ -1,4 +1,0 @@
-[submodule "bluetrack-webapp"]
-	path = bluetrack-webapp
-	url = https://github.com/hopkinskong/bluetrack.git
-	branch = bluetrack-webapp
