@@ -1,0 +1,74 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ISL9120IR
+D Compact High Efficiency Low Power Buck-Boost Regulator
+K power
+$ENDCMP
+#
+$CMP MIC5219-2.5BM5
+D 500mA LDO fixed output voltage 2.5V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-2.6BM5
+D 500mA LDO fixed output voltage 2.6V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-2.7BM5
+D 500mA LDO fixed output voltage 2.7V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-2.8BM5
+D 500mA LDO fixed output voltage 2.8V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-2.9BM5
+D 500mA LDO fixed output voltage 2.9V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-3.0BM5
+D 500mA LDO fixed output voltage 3.0V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-3.1BM5
+D 500mA LDO fixed output voltage 3.1V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-3.3BM5
+D 500mA LDO fixed output voltage 3.3V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-3.6BM5
+D 500mA LDO fixed output voltage 3.6V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP MIC5219-5.0BM5
+D 500mA LDO fixed output voltage 5.0V ultra-low-noise
+K linear low dropout Regulator fixed ultra-low-noise
+F http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf
+$ENDCMP
+#
+$CMP SGM2019-2.8
+D Low Power, Low Dropout, RF-Linear Regulators
+K linear low dropout Regulator fixed
+F http://cn.sg-micro.com/pdf/SGM2019.pdf
+$ENDCMP
+#
+#End Doc Library

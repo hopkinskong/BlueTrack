@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 74VHC164
+D 74VHC164 8-Bit Serial-In, Parallel-Out Shift Register
+K logic
+$ENDCMP
+#
+#End Doc Library

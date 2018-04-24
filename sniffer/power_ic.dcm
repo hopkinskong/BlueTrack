@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ISL9120IR
+D Compact High Efficiency Low Power Buck-Boost Regulator
+K power
+$ENDCMP
+#
+$CMP SGM2019-2.8
+D Low Power, Low Dropout, RF-Linear Regulators
+K linear low dropout Regulator fixed
+F http://cn.sg-micro.com/pdf/SGM2019.pdf
+$ENDCMP
+#
+#End Doc Library
