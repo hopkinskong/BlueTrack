@@ -1,0 +1,31 @@
+#ifndef CONFIG_H_
+#define CONFIG_H_
+
+#undef  SERVER_LISTEN_PORT
+#define SERVER_LISTEN_PORT 9998
+
+#undef  ZMQ_RPC_BIND_ADDR
+#define ZMQ_RPC_BIND_ADDR "tcp://127.0.0.1:8802"
+
+#undef  TICK_MS
+//#define TICK_MS 125
+#define TICK_MS 1UL
+
+#undef  SNIFFER_TIMEOUT_TICK
+#define SNIFFER_TIMEOUT_TICK 11000
+
+#undef  PARSER_BUFFER_SIZE
+//#define PARSER_BUFFER_SIZE 1024*512 // 512KB
+//#define PARSER_BUFFER_SIZE 64 // 512KB
+#define PARSER_BUFFER_SIZE 4*1024*1024
+
+#undef  TCP_RECEIVE_BUFFER_SIZE
+#define TCP_RECEIVE_BUFFER_SIZE 32768
+
+#undef  VICTIMS_PHOTOS_DIRECTORY
+#define VICTIMS_PHOTOS_DIRECTORY "victims_photos"
+
+#undef  ZMQ_NNM_CONN_ADDR
+#define ZMQ_NNM_CONN_ADDR "ipc://@/bluetrack/bluetrack-neural-network"
+
+#endif /* CONFIG_H_ */
