@@ -1,0 +1,30 @@
+div.row
+	div.col-lg-12
+		h1.page-header Tracking
+div.row
+	div.col-md-offset-4.col-md-4
+		div.panel.panel-danger
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-users.fa-5x
+					div.col-xs-9.text-right
+						div.huge#tracking_victims_to_track_online_count -
+						div Victims To Track Online
+div.row
+	div.col-md-offset-1.col-md-10
+		div.panel.panel-success
+			div.panel-heading
+				| All Previously&amp;Currently Tracked Victims
+			div.panel-body.table-responsive
+				table.table.table-striped.text-center
+					thead
+						tr
+							th.text-center MAC Address
+							th.text-center Nickname
+							th.text-center Online
+							th.text-center Total Sniffers Heard
+							th.text-center Currently Enabled
+							th.text-center Track Settings
+					tbody#tracking_tbody
+						

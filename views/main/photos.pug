@@ -1,0 +1,34 @@
+div.row
+	div.col-lg-12
+		h1.page-header Photos Identification
+div.row
+	div.col-md-offset-4.col-md-4
+		div.panel.panel-warning
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-camera.fa-5x
+					div.col-xs-9.text-right
+						div.huge#photos_photos_captured_count -
+						div Photos Captured
+div.row
+	div.col-md-offset-1.col-md-10
+		div.alert.text-center.alert-info(style="display: inline-block;")
+			span.glyphicon.glyphicon-info-sign 
+			|  BlueTrack Neural Network Module (BTNNM) Status: 
+			span#photos_btnnm_status
+		div.panel.panel-danger
+			div.panel-heading
+				| Photos Captured For All Victims
+			div.panel-body.table-responsive
+				table.table.table-striped.text-center
+					thead
+						tr
+							th.text-center Nickname
+							th.text-center MAC Address
+							th.text-center Photos Captured
+							th.text-center NNM Processed
+							th.text-center View
+							th.text-center NNM Action
+					tbody#photos_tbody
+						

@@ -1,0 +1,107 @@
+.container {
+	margin:0px !important;
+	padding:0px !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.navbar-brand {
+	cursor: default;
+}
+
+#wrapper {
+	display:flex;
+	flex-flow:column;
+	height:100%;
+}
+
+#page-wrapper {
+	height:100%;
+	overflow-y:auto;
+	overflow-x:hidden;
+	flex: 0 1 auto;
+	margin-top:50px;
+}
+
+#page-wrapper::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+#page-wrapper::-webkit-scrollbar {
+	width: 6px;
+	background-color: #fff;
+}
+
+#page-wrapper::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.2);
+	background-color: #444;
+}
+
+.page-header {
+	margin-top: 0px !important;
+}
+
+#console {
+	width:100%;
+	background-color:#111;
+	flex: 1 0 110px;
+	margin:0;
+	padding:5px;
+	opacity:0.99;
+	border: 3px groove #ccc;
+	color: #ccc;
+	font-family: Consolas, monaco, monospace;
+	font-size: 12px;
+	font-style: normal;
+	font-variant: normal;
+	word-wrap: break-word;
+	overflow-x: hidden;
+	overflow-y: auto;
+	font-weight: bold;
+}
+
+#console .error {
+	color: #FF5757;
+}
+
+#console::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #111;
+}
+
+#console::-webkit-scrollbar {
+	width: 6px;
+	background-color: #111;
+}
+
+#console::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #444;
+}
+
+.table > tbody > tr > td {
+     vertical-align: middle;
+}
+
+.modal-body > .img-responsive {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal {
+	position: absolute !important;
+    overflow-y: scroll !important;
+}
+
+.classified-imgs {
+	max-height:310px;
+    height:auto;
+    width:auto;
+	margin: 0px auto;
+}

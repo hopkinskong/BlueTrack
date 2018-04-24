@@ -1,0 +1,30 @@
+div.row
+	div.col-lg-12
+		h1.page-header Sniffers
+div.row
+	div.col-md-offset-4.col-md-4
+		div.panel.panel-info
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-wifi.fa-5x
+					div.col-xs-9.text-right
+						div.huge#sniffers_sniffer_count -
+						div Sniffers Connected
+div.row
+	div.col-md-offset-1.col-md-10
+		div.panel.panel-warning
+			div.panel-heading
+				| Connected Sniffers List
+			div.panel-body.table-responsive
+				table.table.table-striped.text-center
+					thead
+						tr
+							th.text-center Sniffer #
+							th.text-center IP
+							th.text-center Battery
+							th.text-center Charging
+							th.text-center BLE Devices
+							th.text-center Settings
+					tbody#sniffers_tbody
+						

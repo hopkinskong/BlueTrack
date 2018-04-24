@@ -1,0 +1,10 @@
+{
+	"login": {
+		"credentials": [["bluetrack", "bluetrack"], ["a", "a"]]
+	}, 
+	
+	"app": {
+		"zmq_rpc_address": "tcp://127.0.0.1:8802", 
+		"app_port": 9999
+	}
+}

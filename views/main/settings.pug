@@ -1,0 +1,17 @@
+div.row
+	div.col-lg-12
+		h1.page-header Settings
+div.row
+	div.col-md-offset-4.col-md-4
+		div.panel.panel-success
+			div.panel-heading
+				| Image Pre-Processing
+			div.panel-body.table-responsive
+				table.table.table-striped.text-center
+					tbody
+						tr
+							td.text-center 
+								label
+									strong Rotate Clockwise 90° 
+									input#settings_rotate_cw_90deg(type="checkbox", onchange="settings.rotate_cw_90deg($(this).is(':checked'))")
+						

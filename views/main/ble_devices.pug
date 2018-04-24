@@ -1,0 +1,29 @@
+div.row
+	div.col-lg-12
+		h1.page-header BLE Devices
+div.row
+	div.col-md-offset-4.col-md-4
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-bluetooth-b.fa-5x
+					div.col-xs-9.text-right
+						div.huge#ble_devices_ble_devices_count -
+						div Total BLE Devices
+div.row
+	div.col-md-offset-2.col-md-8
+		div.panel.panel-info
+			div.panel-heading
+				| Discovered BLE Devices
+			div.panel-body
+				table.table.table-striped.text-center
+					thead
+						tr
+							th.text-center MAC Address
+							th.text-center Total Sniffers Heard
+							th.text-center RSSIs
+							th.text-center Tracking
+							th.text-center Track Settings
+					tbody#ble_devices_tbody
+						

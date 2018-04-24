@@ -1,0 +1,64 @@
+div.row
+	div.col-lg-12
+		h1.page-header Dashboard
+div.row
+	div.col-lg-3.col-md-6
+		div.panel.panel-info
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-wifi.fa-5x
+					div.col-xs-9.text-right
+						div.huge#dashboard_sniffer_count 0
+						div Sniffers Connected
+			a(href="#", onclick="$('*[data-page=\\'sniffers\\']').click();")
+				div.panel-footer
+					span.pull-left View Details
+					span.pull-right
+						i.fa.fa-arrow-circle-right
+					div.clearfix
+	div.col-lg-3.col-md-6
+		div.panel.panel-primary
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-bluetooth-b.fa-5x
+					div.col-xs-9.text-right
+						div.huge#dashboard_ble_devices_count 0
+						div Total BLE Devices
+			a(href="#", onclick="$('*[data-page=\\'ble_devices\\']').click();")
+				div.panel-footer
+					span.pull-left View Details
+					span.pull-right
+						i.fa.fa-arrow-circle-right
+					div.clearfix
+	div.col-lg-3.col-md-6
+		div.panel.panel-danger
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-users.fa-5x
+					div.col-xs-9.text-right
+						div.huge#dashboard_victims_to_track_online_count 0
+						div Victims To Track Online
+			a(href="#", onclick="$('*[data-page=\\'tracking\\']').click();")
+				div.panel-footer
+					span.pull-left View Details
+					span.pull-right
+						i.fa.fa-arrow-circle-right
+					div.clearfix
+	div.col-lg-3.col-md-6
+		div.panel.panel-warning
+			div.panel-heading
+				div.row
+					div.col-xs-3
+						i.fa.fa-camera.fa-5x
+					div.col-xs-9.text-right
+						div.huge#dashboard_photos_captured_count 0
+						div Photos Captured
+			a(href="#", onclick="$('*[data-page=\\'photos\\']').click();")
+				div.panel-footer
+					span.pull-left View Details
+					span.pull-right
+						i.fa.fa-arrow-circle-right
+					div.clearfix

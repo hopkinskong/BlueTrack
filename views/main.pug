@@ -1,0 +1,138 @@
+extends template/default_template.pug
+
+block config
+	- var page_title = "Main";
+	
+append css
+	link(rel='stylesheet', href='/css/startmin.css')
+	link(rel='stylesheet', href='/css/font-awesome.min.css')
+	link(rel='stylesheet', href='/css/metisMenu.min.css')
+	link(rel='stylesheet', href='/css/main.css')
+
+append scripts
+	script(src='/js/metisMenu.min.js')
+	script(src='/js/json-rpc.min.js')
+	script(src='/js/startmin.js')
+	script(src='/js/core/util.js')
+	script(src='/js/core/console.js')
+	script(src='/js/core/app.js')
+	script(src='/js/core/page.js')
+	script(src='/js/core/sniffer_settings.js')
+	script(src='/js/core/tracking.js')
+	script(src='/js/core/photos.js')
+	script(src='/js/core/settings.js')
+
+block main_content
+	div#wrapper
+		<!-- Navigation -->
+		nav.navbar.navbar-inverse.navbar-fixed-top(role="navigation")
+			div.navbar-header
+				span.navbar-brand BlueTrack WebApp
+			button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
+				span.sr-only Toggle navigation
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			<!-- Top Navigation: Right Menu -->
+			ul.nav.navbar-right.navbar-top-links
+				li.dropdown
+					a.dropdown-toggle(data-toggle="dropdown", href="#")
+						i.fa.fa-user.fa-fw
+						|  #{loggedUser}
+						b.caret
+					ul.dropdown-menu.dropdown-user
+						li
+							a(href="/logout")
+								i.fa.fa-sign-out.fa-fw
+								|  Logout
+			<!-- Sidebar -->
+			div.navbar-default.sidebar(role="navigation")
+				div.sidebar-nav.navbar-collapse
+					ul.nav#side-menu
+						li
+							a#default-page(href="#", data-page="dashboard", onclick="mainPage.load(this)")
+								i.fa.fa-dashboard.fa-fw
+								|  Dashboard
+						li
+							a(href="#", data-page="sniffers", onclick="mainPage.load(this)")
+								i.fa.fa-wifi.fa-fw
+								|  Sniffers
+						li
+							a(href="#", data-page="ble_devices", onclick="mainPage.load(this)")
+								i.fa.fa-bluetooth.fa-fw
+								|  BLE Devices
+						li
+							a(href="#", data-page="tracking", onclick="mainPage.load(this)")
+								i.fa.fa-crosshairs.fa-fw
+								|  Tracking
+						li
+							a(href="#", data-page="photos", onclick="mainPage.load(this)")
+								i.fa.fa-image.fa-fw
+								|  Photos Identification
+						li
+							a(href="#", data-page="settings", onclick="mainPage.load(this)")
+								i.fa.fa-wrench.fa-fw
+								|  Settings
+								
+		div.custom-scrollbar#page-wrapper
+		div#console
+			p#console_texts
+				| BlueTrack WebApp
+
+	div.modal.fade#snapshot_modal_static(role="dialog")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					div.modal-title 
+				div.modal-body
+				div.modal-footer
+	div.modal.fade#snapshot_modal(role="dialog")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					div.modal-title 
+				div.modal-body
+				div.modal-footer
+					button.btn.btn-default(type="button", data-dismiss="modal") Close
+	div.modal.fade#tracking_rename_modal(role="dialog")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					div.modal-title Renaming Victim 
+				div.modal-body
+				div.modal-footer
+					button.btn.btn-success(type="button", onclick="tracking.rename_confirm()") Confirm Rename
+					button.btn.btn-default(type="button", data-dismiss="modal") Cancel
+	div.modal.fade#sniffer_rssi_config_modal(role="dialog")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					div.modal-title Configuring RSSI Threshold
+				div.modal-body
+				div.modal-footer
+					button.btn.btn-success(type="button", onclick="sniffer_settings.rssi_threshold_confirm()") Confirm Update
+					button.btn.btn-default(type="button", data-dismiss="modal") Cancel
+	div.modal.fade#aec_config_modal(role="dialog")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					div.modal-title Configurating AEC
+				div.modal-body
+				div.modal-footer
+					button.btn.btn-success(type="button", onclick="sniffer_settings.manual_aec_confirm()") Confirm
+					button.btn.btn-default(type="button", data-dismiss="modal") Cancel
+	div.modal.fade#view_photos_modal_static(role="dialog")
+		div.modal-dialog
+			div.modal-content
+				div.modal-header
+					div.modal-title 
+				div.modal-body
+				div.modal-footer
+	div.modal.fade#view_photos_modal(role="dialog")
+		div.modal-dialog.modal-lg
+			div.modal-content
+				div.modal-header
+					div.modal-title 
+				div.modal-body
+				div.modal-footer
+					button.btn.btn-default(type="button", data-dismiss="modal") Close
