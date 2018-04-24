@@ -6,3 +6,11 @@
 	path = bluetrack-hardware
 	url = https://github.com/hopkinskong/bluetrack.git
 	branch = bluetrack-hardware
+[submodule "bluetrack-firmware"]
+	path = bluetrack-firmware
+	url = https://github.com/hopkinskong/bluetrack.git
+	branch = bluetrack-firmware
+[submodule "bluetrack-backend"]
+	path = bluetrack-backend
+	url = https://github.com/hopkinskong/bluetrack.git
+	branch = bluetrack-backend
